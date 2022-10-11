@@ -75,7 +75,7 @@ nav ul li a:hover {
 .container {
     min-height: 100vh;
     max-width: 85%;
-    background: url('/images/bg.jpg') no-repeat center center/cover;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
     margin: 15px auto;
     border-radius: 15px;
     padding: 20px;
