@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+nav {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul #logo {
+    width: 3.5%;
+}
+
+nav ul #logo img {
+    width: 100%;
+    padding: 3px;
+}
+
+nav ul span {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: #1ed760;
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul li a:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+/* burger design */
+#burger{
+    position: absolute;
+    right: 5px;
+    display: none;
+    top: 5px;
+}
+#burger .line {
+    width: 34px;
+    height: 4px;
+    margin: 8px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* container */
+.container {
+    min-height: 100vh;
+    max-width: 85%;
+    background: url('/images/bg.jpg') no-repeat center center/cover;
+    margin: 15px auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+
+.container h1 {
+    margin: 0px 10px;
+    margin-bottom: 70px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container .songlist {
+    width: 60%;
+}
+
+.container .songlist .song-item {
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 70%;
+    justify-content: space-between;
+    margin: 12px 0px;
+    height: 45px;
+    padding: 0px 20px;
+    border-radius: 30px;
+}
+
+.container .songlist .song-item img {
+    width: 10%;
+    border-radius: 25px;
+    aspect-ratio: 1/1;
+    padding: 5px;
+}
+
+.container .songlist .song-item span i {
+    cursor: pointer;
+}
+
+/* bottom */
+.bottom {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100px;
+    position: sticky;
+    bottom: 0px;
+}
+
+.bottom #progressbar {
+    width: 80%;
+    cursor: pointer;
+}
+
+.bottom .buttons {
+    margin: 10px;
+}
+
+.bottom .buttons i {
+    cursor: pointer;
+}
+
+.bottom .songdetail {
+    position: absolute;
+    left: 5em;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+.bottom .songdetail img {
+    width: 50px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}

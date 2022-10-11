@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1020px){
+    .container .songlist{
+        width: 90%;
+    }
+    .bottom{
+        height: 130px;
+    }
+    .bottom .songdetail{
+        position: static;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 450px){
+    /* navbar responsive */
+    nav ul{
+        flex-direction: column;
+        height: 150px;
+    }
+    nav ul #logo{
+        width: 7.5%;
+    }
+    /* designing for hamburger icon */
+    #burger{
+        display: block;
+    }
+    .ham-h{
+        height: 50px;
+        opacity: 0;
+    }
+    /* container response */
+    .container .songlist{
+        width: 100%;
+    }
+    .container .songlist .song-item{
+        width: 95%;
+    }
+    .container .songlist .song-item img{
+        padding: 2px;
+    }
+    /* bottom responsive */
+    .songdetail span{
+        font-size: 12px;
+    }
+}
