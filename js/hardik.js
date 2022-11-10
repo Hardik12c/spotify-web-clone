@@ -93,6 +93,7 @@ play_btn_list.forEach((element) => {
             audioelement.pause();
             play_pause_btn.classList.remove('fa-pause-circle-o');
             play_pause_btn.classList.add('fa-play-circle-o');
+            img_gif.style.opacity = 0;
         }else{
             make_all_pause();
             index = parseInt(e.target.id);
